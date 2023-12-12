@@ -34,7 +34,8 @@
     - werkzeug 3.0.1
     - openai 0.28.0
 - DB
-    - mongoDB 4.4.25      
+    - mongoDB 4.4.25
+
 *Kakao Chatbot*
 
 ### 아이디어 소개
