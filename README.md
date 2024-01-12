@@ -7,35 +7,13 @@
 - 조아영
 
 ### 개발환경
-**<웹기준 개발환경>**    
-*LocalHost Server*    
-- OS
-    - Window 11
-- Language
-    - Python 3.10.9
-         - Flask 3.0.0
-         - Werkzeug 3.0.1
-         - openai 0.28.1
-- DB
-    - MongoDB 7.0.2
-    
-*Web*    
-- HTML5
-- CSS3
-- JavaScript
-    
-**<챗봇 기준 개발환경>**    
-*Server*    
-- OS
-    - Ubuntu 18.04.2 (GoormIDE)
-- Language
-    - python 3.8.0
-    - flask 3.0.0
-    - werkzeug 3.0.1
-    - openai 0.28.0
-- DB
-    - mongoDB 4.4.25
-
-*Kakao Chatbot*
+|||웹 개발|카카오챗봇 개발|
+|---|---|---|---|
+|Environment|OS|Window 11|Ubuntu 18.04.2 (GoormIDE)|
+|Language|Python|3.10.9|3.8.0|
+||openai|0.28.1|0.28.0|
+|Server|Flask|3.0.0|3.0.0|
+|DB|MongoDB|7.0.2|4.4.25|
+|Front||HTML5+CSS3+JavaScript|Kakao Chatbot Service|
 
 ### 아이디어 소개
