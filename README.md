@@ -1,10 +1,31 @@
 ## 5060 트렌드 Job자!
 ### 제작자
-- 김세연
-- 백다은
-- 엄채린
-- 오수민
-- 조아영
+<table>
+  <tr>
+    <td>
+      <img href="https://avatars.githubusercontent.com/u/139933043?v=4">
+      <a href="https://github.com/seyeon78">김세연</a>
+    </td>
+    <td>
+      <img href="https://avatars.githubusercontent.com/u/70556627?v=4">
+      <a href="https://github.com/nuebaek">백다은</a>
+    </td>
+    <td>
+      <img href="https://avatars.githubusercontent.com/u/113615912?v=4">
+      <a href="https://github.com/cloveomr">엄채린</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img href="https://avatars.githubusercontent.com/u/91663112?v=4">
+      <a href="https://github.com/HopesofApril">오수민</a>
+    </td>
+    <td>
+      <img href="">
+      <a href="https://github.com/cAhyoung">조아영</a>
+    </td>
+  </tr>
+</table>
 
 ### 개발환경
 |||웹 개발|카카오챗봇 개발|
