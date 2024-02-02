@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>5060 트렌드 Job자</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+        /* 폰트 적용 */
+        body{
+            font-family: 'Gowun Dodum', sans-serif;
+        }
+        .chatbot-section{
+            max-width: 100%;
+            width: 450px;
+            height: 520px;
+            background-color: #efefef;
+            border-radius: 7px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            margin : 10px;
+            padding: 5px;
+            display: inline-block;
+        }
+        .title-intro{
+            flex-direction: row;
+            justify-content: flex-start;
+            align-content: flex-start;
+            margin-bottom: -40px;
+        }
+        .user-bubble{
+            max-width: 300px;
+            min-width: 50px;
+            color: #000;
+            background-color: #ffe9ba;
+            border-radius: 7px;
+            align-self: flex-end;
+            margin: 10px 3px;
+            padding: 10px 5px;
+            font-size: 18px;
+        }
+        .gpt-bubble {
+            max-width: 300px;
+            min-width: 50px;
+            background-color: #fff;
+            border-radius: 7px;
+            margin: 10px 3px;
+            padding: 10px 5px;
+            font-size: 18px;
+        }
+        .prompt-form-block{
+            height: 50px;
+            grid-column-gap: 16px;
+            grid-row-gap: 16px;
+            object-fit: fill;
+            flex-wrap: nowrap;
+            padding: 5px;
+            margin: 5px;
+            display: inline-block;
+            border-radius: 7px;
+        }
+        .submit-btn {
+            width: auto;
+            text-align: center;
+            margin-left: 5px;
+            margin-right: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .intro-grid{
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+            float: left;
+        }
+        .intro-text{
+            margin-right: 0;
+            padding-right: 5px;
+            font-size: 16px;
+            flex-direction: row;
+            float: left;
+        }
+        .chatbot-bubble{
+            width: 450px;
+            height: 380px;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding: 5px 10px;
+            display: flex;
+            overflow: scroll;
+            ;
+        }
+        .text-field{
+            width: 330px;
+            height: 25px;
+            margin : 5px;
+            border-radius: 7px;
+            padding: 5px;
+        }
+        .gpt-bubble_vis{
+            max-width: 300px;
+            min-width: 50px;
+            background-color: #fff;
+            border-radius: 7px;
+            margin: 10px 3px;
+            padding: 10px 5px;
+            font-size: 18px;
+        }
+        .service-name{
+            margin: 10px;
+            width: 300px;
+        }
+        .service-name-div{
+            width: 500px;
+            display: block;
+        }
+        .github-block{
+            margin: 10px;
+            float: right;
+            color: black;
+            display: inline-block;
+        }
+        .intro-text{
+            margin: 10px;
+            float: left;
+        }
+        .text-block{
+            margin: 10px;
+            font-size: 18px;
+        }
+        .chatbot-title{
+            background-color: silver;
+            padding: 10px;
+            border-radius: 7px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="title-cols">
+        <div class="service-name-div">
+            <h1 class="service-name">
+                5060 트렌드 Job자!
+            </h1>
+        </div>
+        <div class="github-block">
+            <a id="github-block" class="github-block" href="https://github.com/cAhyoung/5060_Trend_Jobja" target="_blank">
+                GitHub Docs
+            </a>
+        </div>
+    </div>
+    <div>
+        <div class="title-intro">
+            <div class="intro-text">
+                <div class="intro-grid">
+                    <p class="text">
+                            중장년층의 재취업을 위한 챗봇 뉴잡스입니다.
+                            <br>
+                            ChatGPT 기반의 챗봇으로 언제 어디서든 사용 가능합니다.
+                            <br>
+                            <br>
+                            현재 제공 가능한 정보는 다음과 같습니다.
+                            <br>
+                               1. 입력한 관심있는 직군이나 직업과 관련된 뉴스 기반의 트렌드 제공
+                            <br>
+                               2. 입력한 관심있는 직군이나 직업과 관련된 내일배움카드 강좌 제공
+                            <br>
+                            <br>
+                               GPT에게 구체적으로 이야기를 해주면 보다 정확하게 답변을 받을 수 있습니다.
+                            <br>
+                               강좌 추천 혹은 동향에 대한 정보를 얻고자할 때 꼭 관심 분야에 대한 키워드와 어떤 것을 원하는지 구체적으로 작성해주세요.
+                            <br>
+                            <br>
+                            해당 웹페이지는 PC에 최적화 되어있습니다.
+                    </p>
+                </div>
+            </div>
+            <div class="chatbot-section">
+                <div class="chatbot-title">
+                    <div class="w-layout-grid gird">
+                        <div class="text-block">
+                            NewJobs
+                        </div>
+                    </div>
+                </div>
+                <div id="chat-main", class="chatbot-bubble">
+                    <div id="start-bubble" class="gpt-bubble_vis">
+                        안녕하세요. 당신의 재취업을 도울 챗봇 뉴잡스입니다.
+                        <br>
+                        원하시는 분야의 동향이나 직업교육 강좌를 추천드릴 수 있어요.
+                        <br>
+                        또한 유사한 다른 직업을 추천받고 싶으시면 이 또한 가능합니다.
+                    </div>
+                </div>
+                <div class="prompt-form-block">
+                    <input id="prompt-field" class="text-field" type="text" maxlength="256" placeholder="뉴잡스에게 궁금한 점을 물어보세요">
+                    <button class="submit-btn" type="button" id="sending-btn">send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+// Submit 버튼에 이벤트 리스너 등록
+document.getElementById("prompt-field").addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        document.getElementById('sending-btn').click();
+
+    }
+})
+document.getElementById('sending-btn').addEventListener('click', async function () {
+  // user input 담을 변수
+  let input;
+  var i = 1;
+  // tag id로 value 값 가져올 수 있도록
+  input = document.getElementById("prompt-field").value;
+  createDiv(input, "user")
+  scrollToBottom()
+  // document.getElementById("user-bubble1").innerText = input;
+  document.getElementById('prompt-field').value = "";
+
+  try {
+    const response = await fetch('http://localhost:5000/chat', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ value: input }),
+    });
+
+    if (response.ok) {
+      console.log(await response.json());
+      fetchDataFromServer();
+    } else {
+      console.error(response.status);
+    }
+  } catch (error) {
+    console.error('데이터를 가져오는 동안 오류 발생:', error.message);
+  }
+});
+
+// gpt 대답 가져오기
+async function fetchDataFromServer() {
+  try {
+    // 서버에서 데이터를 가져오는 fetch 요청
+    const response = await fetch('http://localhost:5000/chat', {
+        method: 'GET', // GET 또는 POST 등 요청 방식을 지정할 수 있습니다.
+        headers: {
+            'Content-Type': 'application/json;charset=utf-8'
+            //'Access-Control-Allow-Origin': 'http://localhost:5000'
+        },
+    });
+    // 응답의 형식을 확인합니다.
+    if (!response.ok) {
+      // 응답이 성공하지 않은 경우
+      throw new Error(`서버 응답 실패: ${response.status}`);
+    }
+
+    // JSON 데이터를 변환합니다.
+    const data = await response.json();
+
+    // 성공적으로 데이터를 받아왔을 때의 동작
+    console.log('서버에서 받은 데이터:', data);
+
+    // 결과를 표시할 요소에 값 추가
+    // var displayArea = document.getElementById('gpt-bubble1');
+    // displayArea.innerText = data.gpt;
+      createDiv(data.gpt, "gpt")
+      this.i++
+      scrollToBottom()
+  } catch (error) {
+    // 데이터를 가져오는 동안 오류가 발생한 경우
+    console.error('데이터를 가져오는 동안 오류 발생:', error.message);
+  }
+}
+function createDiv(text, userVsGpt) {
+    var obj = document.getElementById("chat-main");
+    var newDiv = document.createElement("div");
+    newDiv.innerText = text;
+    newDiv.setAttribute("id", userVsGpt+"-bubble"+this.i)
+    newDiv.setAttribute("class", userVsGpt+"-bubble")
+    obj.appendChild(newDiv)
+}
+function scrollToBottom() {
+    var scrollContainer = document.getElementById("chat-main");
+    scrollContainer.scrollTop = scrollContainer.scrollHeight;
+}
+</script>
+
+</body>
+</html>
