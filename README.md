@@ -2,26 +2,26 @@
 ### 제작자
 <table>
   <tr>
-    <td>
-      <img href="https://avatars.githubusercontent.com/u/139933043?v=4">
+    <td align=center>
+      데이터사이언스학과 21 <br>  
       <a href="https://github.com/seyeon78">김세연</a>
     </td>
-    <td>
-      <img href="https://avatars.githubusercontent.com/u/70556627?v=4">
+    <td align=center>
+      데이터사이언스학과 21 <br>
       <a href="https://github.com/nuebaek">백다은</a>
     </td>
-    <td>
-      <img href="https://avatars.githubusercontent.com/u/113615912?v=4">
+    <td align=center>
+      데이터사이언스학과 21 <br>
       <a href="https://github.com/cloveomr">엄채린</a>
     </td>
   </tr>
   <tr>
-    <td>
-      <img href="https://avatars.githubusercontent.com/u/91663112?v=4">
+    <td align=center>
+      데이터사이언스학과 21 <br>
       <a href="https://github.com/HopesofApril">오수민</a>
     </td>
-    <td>
-      <img href="">
+    <td align=center>
+       데이터사이언스학과 21 <br>
       <a href="https://github.com/cAhyoung">조아영</a>
     </td>
   </tr>
